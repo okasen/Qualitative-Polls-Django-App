@@ -26,6 +26,8 @@ NOTE: Install instructions are a work in progress at the current moment-- I stil
 
 -4--add the following line to your urls.py in your main app: path('polls/', include('user_polls.urls')),
 
--5--run manage.py makemigrations and then manage.py migrate to create the databases for questions and answers
+-5--relocate the "polls" folder (containing the html templates) to your templates folder (or create a base template folder if you need)
 
--6-optional but recommended: Run manage.py tests. There is a test file included with a few tests that should indicate whether your app installed properly
+-6--run manage.py makemigrations and then manage.py migrate to create the databases for questions and answers
+
+-7-optional but recommended: Run manage.py tests. There is a test file included with a few tests that should indicate whether your app installed properly
