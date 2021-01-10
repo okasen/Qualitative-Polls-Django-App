@@ -2,10 +2,14 @@
 A user polls app for Django projects that uses Javascript/JQuery/AJAX to create, serve, and receive user polls that allow text area information. By Okasen on Github, AKA Jennifer Black, AKA @JenniLBlack on Twitter. App is offered without warranty of any kind.
 
 REQUIREMENTS:
-Python - this is a python app, so you need an interpreter
+Python - this is a python app, so you need the interpreter
+
 Django - this is an app to work in an existing Django project. It can be installed in almost any app that satisfies the following requirements:
+
 --JQuery - you must have the JQuery source saved as a .js file and point the script in base.html to your JQuery.js file. Keeping JQuery.js in the base static folder works
+
 --a "user"/"accounts" app. The polls require a user ID to be assigned to each answer (this is not anonymous polling, but it could be changed to be)
+
 --the users must include staff users, OR you must alter the code to remove the "UserPassesTestMixin" from QAView. (this mixin prevents non-authorized users from creating and deleting questions)
 
 TO INSTALL:
