@@ -3,10 +3,11 @@
 {% block content %}
 
 <div class="container-fluid">
-{% for answer in answers %}
-<p>{{ answer.question.title }}</p>
-<p>you answered:</p>
-<p> {{ answer.answer }}</p>
+{% for key, answer in qAndAs.items %}
+<p><h2> {{ key }}: </h2></p>
+{% for answerData in answer %} 
+	{{ answerData.answer }}</p>
+	{% endfor %}
 {% endfor %}
 </div>
 <hr />
